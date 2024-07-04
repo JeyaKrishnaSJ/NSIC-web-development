@@ -1,93 +1,35 @@
-<!DOCTYPE html>  
-<html>  
-<head>  
-
-<style>  
-body{
-    color: rgb(0, 0, 0);
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-image:url('back.jpg') ;
- 
- div {  
-            padding: 10px 0;  
-         }  
-hr {  
-  border: 1px solid#1b1261;  
-  margin-bottom: 25px;  
-}  
-input[type=text] {
-  width: 100%;
-  padding: 15px;
-  margin: 6px 0 20px 0;
-  border:none;
-  background-color:#f5fafa
-}
-input[type=submit]
-{
-    padding: 8px 20px;
-    background-color: #11aa28;
-    text-align: center;
-}
-  
-</style>  
-</head>  
-<body>  
-<form>  
-<div class="text">  
-    <center> <h1> Student Registeration Form</h1> </center>  
-<hr>  
-
-<label> First name </label>   
-<input type="text" name="firstname" placeholder= "Firstname" size="15" required />   
-<label> Last name</label> 
-<input type="text" name="lastname" placeholder="lastname" size="15" required />
-<div>  
-<label>   
-<div>
-<label>Register Number</label>
-<input type="text" name="Registernumber" placeholder="register number" size="12" required />
-</div>
-Course :  
-</label>   
-  
-<select>  
-<option value="Course" disabled>Course</option>  
-<option value="CSE">CSE</option>  
-<option value="IT">IT</option>  
-<option value="AI&DS">B.Tech</option>  
-<option value="AI&ML">MBA</option>  
-<option value="IOT">MCA</option>  
-</select>  
-</div>  
-<div>  
-<label>   
-Gender :  
-</label><br>  
-<input type="radio" value="Male" name="gender" checked > Male   
-<input type="radio" value="Female" name="gender"> Female   
-<input type="radio" value="Other" name="gender"> Other  
-  
-</div>  
-<label>   
-Phone :  
-</label>  
-<input type="text" name="phone" placeholder="phone no." size="10"/ required>  
-<div> 
-<label for="address"></label>
-Current Address : 
-<input type="text" name="address" placeholder="Address" size="100"/ required>  
-</div>
- <label for="email">Email :</label>  
- <input type="text" placeholder="Enter Email" name="email" required>  
-<div>
-    <input type="checkbox" id="check" name="check" value="box">
-    <label>Hereby I confirm that the provided details are true</label>
-</div>
-  <br>
-  <center>
-  <input type="submit" value="Submit">
-</center>
-
-</form>  
-</body>  
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registeration</title>
+    <link rel="stylesheet" href="reg.css">
+</head>
+<body>
+    <div class="container">
+        <div class="center">
+            <h1>Log in</h1>
+            <form method="post">
+            <div class="textf">
+                <label>Username</label>
+                <input type="text" name="User Name" required>
+                
+            </div>
+            <div class="textf">
+                <label>Password</label>
+                <input type="password" name="Password" required>
+                
+            </div>
+            <input name="Submit" type="Submit" value="Login" >
+            
+                <div class="signup">
+                    <br>
+                Don't have an account? Sign up
+                </div>
+            </form>
+        </div>
+        </div>
+    </div>
+</body>
 </html>
